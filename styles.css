@@ -13,6 +13,14 @@ body {
   border: 10px solid #EF798A;
 }
 
+#gridcontainer-1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 50px;
+  margin-top: 5px;
+  border: 10px solid #EF798A;
+}
+
 #griditem{
   display: flex;
   text-align: center;
@@ -24,6 +32,17 @@ body {
 #dot {
   height: 150px;
   width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#dot-1 {
+  height: 250px;
+  width: 250px;
   background-color: white;
   border-radius: 50%;
   display: flex;
