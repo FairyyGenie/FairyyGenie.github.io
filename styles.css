@@ -1,0 +1,59 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 22px;
+  border: 20px dotted rgb(25, 134, 149);
+  animation: mymove 10s infinite alternate;
+}
+
+#gridcontainer{
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  margin: 50px;
+  margin-top: 5px;
+  border: 10px solid #EF798A;
+}
+
+#griditem{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#dot {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  margin: 50px;
+}
+
+@keyframes mymove {
+  0% {
+    background: #DAE0E7;
+  }
+  50% {
+    background: #A1B5D8;
+  }
+  100% {
+    background: #C5D2E7;
+  }
+}
+
+header{
+  display: block;
+  justify-items: center;
+  color:white;
+  background-color: #EF798A;
+  margin: 50px;
+  text-align: center;
+  font-size: 35px;
+}
