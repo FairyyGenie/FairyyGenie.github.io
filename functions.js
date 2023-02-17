@@ -3,12 +3,7 @@ function openNav() {
   document.getElementById("main").style.marginLeft = "250px";
 }
 
-
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
-}
-
-function cloud(){
-    document.getElementById("body").style.animation = "cloud 2s";
 }

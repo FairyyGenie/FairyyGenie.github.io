@@ -5,8 +5,9 @@
 		<link rel="stylesheet" href="styles.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="functions.js"></script>
-
     </head>
+
+    <!-- First section of the website introducing the users to the story -->
     <body>
       <div class="flex-container">
       <div class="sectionbody1"><hr>
@@ -22,53 +23,43 @@
               <li class="content__container__list__item">Wanderer!</li>
             </ul>
           </div>
+          <p style="font-size: 24px; text-align: center;">Ready to start your wandering adventure?</p>
           <div class="scroll"></div>
         </div>
 
+        <!-- second section of website showing the complete videos and title and the cloud -->
         <div class="sectionbody2">
         <header>
-            <h1 style="text-align:center; margin: auto; justify-content: center;">Wanderer</h1>
-            <span id="mySidebar" class="sidebar">
+            <h1 style="margin: auto;">Wanderer</h1>
+            <div id="mySidebar" class="sidebar">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <a href="About.html">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
-            </span>
-            <span id="main">
-              <button class="openbtn" onclick="openNav()">&#9776;</button>
-            </span></hr>
-        </header>
-
-        <p>Below you will see the video of <span style="border-bottom: 3px solid; font-style: oblique;">a Wanderer</span> trying to find something interesting on NYUAD campus.<br/>
-        Will they find it?</p>
-        </div>
-
-        <div class="sectionbody3">
-        <h3  style="text-align:center;">The Journey:</h3>
-
-        <div class="gridcontainer">
-            <div id="griditem"><span id="dot">Hello</span></div>
-            <div id="griditem"><video width=auto height=500px controls>
-              <source src="clips/CommsLab-1.mov" type="video/mp4">
-            </video></div>
-          <div id="griditem"><button id="dotbutton" onclick="cloud();">Click to Daydream</button></div>
-        </div>
-        </div>
-
-        <div class="sectionbody4">
-        <h3  style="text-align:left; margin: 50px;">Each Spaces:</h3>
-
-        <div id="gridcontainer1">
-            <div id="griditem"><span id="dot1">Sofa Area</span>
+              <a href="Creator.html">Creator</a>
             </div>
-            <div id="griditem"><video width=auto height=500px controls>
-              <source src="clips/IMG_5700.mov" type="video/mp4">
-            </video></div>
+            <!-- the button for hamburger menu -->
+            <div>
+              <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+          </header>
+          <!-- paragraph -->
+          <div><p id="main" style="color:#00072D;text-align:left;padding:50px;font-size:20px;margin: auto; align-items: center;">Below you will see the video of <span style="border-bottom: 3px solid; font-style: oblique;">a Wanderer</span> trying to find a place to rest on NYUAD campus.<br/>
+            <br>Will they find it?</p></div>
+        
+        <!-- cloud animation and interaction -->
+        <span class="cloud"><img src="clips/cloud.png"></span>
+        <div><p id="main" style="color:#00072D;text-align:left;padding:50px;font-size:20px;margin: auto; align-items: center;">
+          Walking through the C3 Art center, there are so much to explore.
+        </p></div>
+        <!-- showing video -->
+        <div id="gridcontainer1">
+          <div id="griditem">
+            <span id="dot1">The Journey</span>
+          </div>
+          <div id="griditem">
+            <video width=auto height=500px controls>
+            <source src="clips/CommsLab-1.mov" type="video/mp4">
+          </video>
         </div>
-        </div>
-
-
-        </div>
+      </div>
     </body>
 </html>
