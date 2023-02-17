@@ -16,7 +16,7 @@
 
 .flex-container hr {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     border:none;
 }
 
@@ -195,6 +195,7 @@
  
 
 header{
+  position: relative;
   justify-content: center;
   overflow: hidden;
   text-align: center;
